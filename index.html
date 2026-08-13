@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Feito & Publicado — Sites simples pra pequenos negócios</title>
+<title>NEXO Web Design — Sites simples pra pequenos negócios</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
@@ -161,6 +161,24 @@
   .section-head h2{ font-family:var(--font-display); font-size:clamp(26px,3vw,34px); font-weight:700; letter-spacing:-0.02em; margin-bottom:12px; }
   .section-head p{ color:var(--text-dim); font-size:15.5px; line-height:1.6; }
 
+  /* ---------- POR QUE TER UM SITE ---------- */
+  .compare-wrap{ display:grid; grid-template-columns:1fr 1fr; gap:24px; }
+  .compare-card{ background:var(--bg-elev); border:1px solid var(--border); border-radius:14px; padding:32px; }
+  .compare-card.highlight{ border-color:var(--green); position:relative; overflow:hidden; }
+  .compare-card.highlight::before{
+    content:''; position:absolute; top:-40%; right:-20%; width:220px; height:220px;
+    background:radial-gradient(circle, var(--green-glow), transparent 70%); pointer-events:none;
+  }
+  .compare-card h3{
+    font-family:var(--font-mono); font-size:12.5px; font-weight:600; text-transform:uppercase;
+    letter-spacing:0.03em; color:var(--text-dim); margin-bottom:20px;
+  }
+  .compare-card.highlight h3{ color:var(--green); }
+  .compare-list{ list-style:none; display:flex; flex-direction:column; gap:14px; }
+  .compare-list li{ font-size:14px; display:flex; gap:10px; align-items:flex-start; line-height:1.5; }
+  .compare-list.cons li::before{ content:'✗'; color:var(--text-dim); font-weight:700; font-family:var(--font-mono); }
+  .compare-list.pros li::before{ content:'✓'; color:var(--green); font-weight:700; font-family:var(--font-mono); }
+
   /* ---------- O QUE ESTÁ INCLUSO ---------- */
   .includes{ display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--border); border:1px solid var(--border); border-radius:12px; overflow:hidden; }
   .inc-item{ background:var(--bg-elev); padding:26px 22px; }
@@ -215,6 +233,7 @@
     .hero-grid{ grid-template-columns:1fr; }
     .includes{ grid-template-columns:1fr; }
     .price-wrap{ grid-template-columns:1fr; }
+    .compare-wrap{ grid-template-columns:1fr; }
     .nav-links{ display:none; }
   }
 </style>
@@ -223,8 +242,9 @@
 
 <header>
   <nav>
-    <div class="logo"><span class="logo-dot"></span>feito<span class="dim">&</span>publicado</div>
+    <div class="logo"><span class="logo-dot"></span>NEXO<span class="dim"> Web Design</span></div>
     <div class="nav-links">
+      <a href="#porque">Por que ter site</a>
       <a href="#inclui">O que inclui</a>
       <a href="#processo">Como funciona</a>
       <a href="#preco">Preço</a>
@@ -270,6 +290,38 @@
           </div>
           <div class="preview-btn">FAZER PEDIDO →</div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="porque">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">POR QUE TER UM SITE</div>
+      <h2>Só Instagram e marketplace não bastam pra quem vende de verdade.</h2>
+      <p>Se seu negócio vive só de Instagram, WhatsApp ou aplicativo de marketplace, ele depende de uma plataforma que não é sua. Um site próprio muda isso — e é o que separa "quem vende" de "negócio que passa confiança".</p>
+    </div>
+    <div class="compare-wrap">
+      <div class="compare-card">
+        <h3>Só rede social / marketplace</h3>
+        <ul class="compare-list cons">
+          <li>Perfil pode ser banido, hackeado ou sair do ar sem aviso</li>
+          <li>Você aparece lado a lado com concorrente na mesma tela</li>
+          <li>Marketplace desconta comissão em cada venda</li>
+          <li>Alcance depende de algoritmo, que muda sem avisar</li>
+          <li>Cliente novo tem mais dúvida se o negócio é sério</li>
+        </ul>
+      </div>
+      <div class="compare-card highlight">
+        <h3>Com um site próprio</h3>
+        <ul class="compare-list pros">
+          <li>O endereço é seu, ninguém tira nem derruba</li>
+          <li>Cliente vê só o seu negócio, sem concorrente do lado</li>
+          <li>Sem comissão por venda feita pelo site</li>
+          <li>Aparece no Google pra quem procura o que você vende</li>
+          <li>Credibilidade na hora: negócio sério tem site</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -370,7 +422,7 @@
         <li>Configuração básica pra aparecer no Google</li>
         <li>Até 2 rodadas de ajuste incluídas</li>
       </ul>
-      <a href="https://wa.me/5516994146794?text=ol%C3%A1%20Joao%20vindo%20seu%20site%20e%20quero%20fazer%20orsamento%20com%20vc" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; justify-content:center;">Chamar no WhatsApp</a>
+      <a href="https://wa.me/5516994146794?text=Ol%C3%A1%20Jo%C3%A3o%2C%20vim%20do%20seu%20site%20e%20quero%20fazer%20or%C3%A7amento%20com%20voc%C3%AA" target="_blank" rel="noopener" class="btn btn-primary" style="width:100%; justify-content:center;">Chamar no WhatsApp</a>
     </div>
 
     <div>
@@ -404,13 +456,13 @@
   <div class="wrap">
     <h2>Bora tirar seu negócio do <span class="hl">papel</span> e colocar no ar?</h2>
     <p>Me chama agora e te mando um exemplo pronto pra você ver o resultado.</p>
-    <a href="https://wa.me/5516994146794?text=ol%C3%A1%20Joao%20vindo%20seu%20site%20e%20quero%20fazer%20orsamento%20com%20vc" target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp agora</a>
+    <a href="https://wa.me/5516994146794?text=Ol%C3%A1%20Jo%C3%A3o%2C%20vim%20do%20seu%20site%20e%20quero%20fazer%20or%C3%A7amento%20com%20voc%C3%AA" target="_blank" rel="noopener" class="btn btn-primary">Falar no WhatsApp agora</a>
   </div>
 </section>
 
 <footer>
   <div class="wrap" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:12px;">
-    <div class="logo"><span class="logo-dot"></span>feito<span class="dim">&</span>publicado</div>
+    <div class="logo"><span class="logo-dot"></span>NEXO<span class="dim"> Web Design</span></div>
     <div>Sites simples pra pequenos negócios · a partir de R$ 200</div>
   </div>
 </footer>
